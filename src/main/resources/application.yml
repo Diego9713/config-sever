@@ -1,0 +1,13 @@
+server:
+  port: 8001
+spring:
+  config:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          default-label: feature/config-data
+          uri: https://github.com/Diego9713/config-data
+          username: Diego9713
+          password: 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
