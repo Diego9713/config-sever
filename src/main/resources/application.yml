@@ -11,3 +11,7 @@ spring:
           uri: https://github.com/Diego9713/config-data
           username: Diego9713
           password: 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
+  security:
+    user:
+      name: root
+      password: s3cr3t
