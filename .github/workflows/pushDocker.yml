@@ -42,10 +42,10 @@ jobs:
         uses: steebchen/kubectl@v2.0.0
         with:
           config: ${{ secrets.KUBE_CONFIG_DATA }}
-          command: set image --record deployment/config-server config-server=diegots/config-server:master
+          command: set image --record deployment/config-sever config-sever=diegots/config-server:master
       - name: verify deployment
         uses: steebchen/kubectl@v2.0.0
         with:
           config: ${{ secrets.KUBE_CONFIG_DATA }}
           version: v1.21.0
-          command: rollout status deployment/config-server
+          command: rollout status deployment/config-sever
