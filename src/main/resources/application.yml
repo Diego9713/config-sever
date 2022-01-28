@@ -8,9 +8,9 @@ spring:
       server:
         git:
           default-label: feature/config-data
+          #default-label: developer
           uri: https://github.com/Diego9713/config-data
           username: Diego9713
-          #username: Diego9713
           password: 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
   security:
     user:
